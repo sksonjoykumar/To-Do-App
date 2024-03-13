@@ -1,0 +1,127 @@
+/* reset style  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(6, 84, 170, 1) 60%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.main-container {
+  width: 30%;
+  margin: 80px auto 0;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 3px 2px 1px #ddd;
+  padding: 2rem;
+}
+.input-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.input-title h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.input-title img {
+  width: 40px;
+  height: 40px;
+}
+.input-box {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 1.5rem;
+  border: 2px solid #ddd;
+}
+.input-box input {
+  flex: 1;
+  padding: 10px 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background: transparent;
+  /* border-radius: 30px; */
+}
+.input-box button {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  border-radius: 1.5rem;
+  background-color: tomato;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.input-box button:hover {
+  background-color: rgb(248, 70, 38);
+}
+
+.ul-container {
+  margin-top: 30px;
+}
+
+.ul-container ul li {
+  margin-left: 1.7rem;
+  list-style-type: none;
+  font-family: "sans-serif";
+  font-weight: normal;
+  font-size: 19px;
+  padding: 12px 8px 12px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.ul-container ul li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: url(./images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: -30px;
+}
+
+.ul-container ul .checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+.ul-container ul .checked::before {
+  background-image: url(./images/checked.png);
+}
+
+.ul-container ul li span {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.ul-container ul li span:hover {
+  color: red;
+}
